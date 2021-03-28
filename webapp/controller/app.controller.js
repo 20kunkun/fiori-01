@@ -7,7 +7,7 @@ sap.ui.define([
 	return Controller.extend("zcg_user.controller.app", {
 		onShowHello : function () {
          // show a native JavaScript alert
-         MessageToast.show("Hello World");
+         MessageToast.show("Hello 陈果!");
       }
 	});
 });
