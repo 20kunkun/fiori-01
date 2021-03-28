@@ -1,5 +1,5 @@
 {
-	"_version": "1.7.0",
+	"_version": "1.5.0",
 	"sap.app": {
 		"id": "zcg_user",
 		"type": "application",
@@ -19,7 +19,7 @@
 				"type": "OData",
 				"settings": {
 					"odataVersion": "2.0",
-					"localUri": "localService/metadata.xml"
+					"localUri": "localService/ZCG_USERINFO_SRV/metadata.xml"
 				}
 			}
 		},
@@ -50,7 +50,7 @@
 			"type": "XML"
 		},
 		"dependencies": {
-			"minUI5Version": "1.30.0",
+			"minUI5Version": "1.6.0",
 			"libs": {
 				"sap.ui.core": {},
 				"sap.m": {},
@@ -72,15 +72,8 @@
 					"bundleName": "zcg_user.i18n.i18n"
 				}
 			},
-			"user": {
-				"type": "sap.ui.model.odata.v2.ODataModel",
-				"settings": {
-					"defaultOperationMode": "Server",
-					"defaultBindingMode": "OneTime",
-					"defaultCountMode": "Request"
-				},
-				"dataSource": "ZCG_USERINFO_SRV",
-				"preload": true
+			"zuser": {
+				"dataSource": "ZCG_USERINFO_SRV"
 			}
 		},
 		"resources": {

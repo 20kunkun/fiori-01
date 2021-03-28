@@ -19,9 +19,9 @@
                 <EntitySet Name="USERSSet" EntityType="ZCG_USERINFO_SRV.USERS" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
             </EntityContainer>
             <atom:link
-                xmlns:atom="http://www.w3.org/2005/Atom" rel="self" href="./sap/opu/odata/sap/ZCG_USERINFO_SRV/USERSSet"/>
+                xmlns:atom="http://www.w3.org/2005/Atom" rel="self" href="./sap/opu/odata/sap/ZCG_USERINFO_SRV/$metadata"/>
                 <atom:link
-                    xmlns:atom="http://www.w3.org/2005/Atom" rel="latest-version" href="./sap/opu/odata/sap/ZCG_USERINFO_SRV/USERSSet"/>
+                    xmlns:atom="http://www.w3.org/2005/Atom" rel="latest-version" href="./sap/opu/odata/sap/ZCG_USERINFO_SRV/$metadata"/>
                 </Schema>
             </edmx:DataServices>
         </edmx:Edmx>

@@ -1,0 +1,9 @@
+<mvc:View controllerName="zcg_user.controller.ZuserList" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc">
+	<List headerText="{i18n>zuserListTitle}" class="sapUiResponsiveMargin" width="auto" items="{zuser>/USERSSet}">
+		<items>
+			<ObjectListItem title="{zuser>Userid} x {zuser>Username}" number="{zuser>Age}"
+		numberUnit="{zuser>Sex}" 
+		numberState="{= ${zuser>Age} > 25 ? 'Error' : 'Success' }"/>
+		</items>
+	</List>
+</mvc:View>

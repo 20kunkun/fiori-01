@@ -4,9 +4,11 @@
 		<pages>
 			<Page title="{i18n>title}">
 				<content>
-					<Button
-      text="Say Hello"
-      press=".onShowHello"/>
+					<Panel headerText="{i18n>helloPanel}">
+						<Button text="{i18n>showHelloButtonText}" press=".onShowHello"/>
+						<Input value="{/recipient/name}" description="Hello {/recipient/name}" valueLiveUpdate="true" width="60%"/>
+					</Panel>
+					<mvc:XMLView viewName="zcg_user.view.ZuserList"/>
 				</content>
 			</Page>
 		</pages>
